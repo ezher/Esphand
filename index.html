@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free coming soon template with jQuery countdown">
+  
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>Esphand </title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- siimple style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+  
+  </head>
+
+  <body>
+
+	<div id="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<h1>Esphand</h1>
+					<h2 class="subtitle">Be ready, we are launching Soon</h2>
+					<div id="countdown"></div> 					<form class="form-inline signup" role="form">
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+					  </div>
+					  <button type="submit" class="btn btn-theme">Get notified!</button>
+					</form>		
+					
+				</div>
+				
+			</div>
+			
+	</div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.countdown.min.js"></script>
+	<script type="text/javascript">
+  $('#countdown').countdown('2015/01/01', function(event) {
+    $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'));
+  });
+</script>
+  </body>
+</html>
